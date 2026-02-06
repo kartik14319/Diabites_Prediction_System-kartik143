@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #2d6a4f);
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    .box {
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background: #ff9800;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ffa726;
+    }
+</style>
+</head>
+
+<body>
+<div class="box">
+    <h1> Welcome</h1>
+    <h2>To</h2>
+    <h3>Diabetes Prediction System</h3>
+    <br>
+    <a href="{{ url_for('home') }}">
+        <button>Start Prediction</button>
+    </a>
+</div>
+</body>
+</html>
